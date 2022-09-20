@@ -11,4 +11,4 @@ def staircase(n,i):
     elif n==0 and i==1:
         print("Not Draw!")
 
-staircase(int(input("Enter Input : ")),1)
+staircase(int(input("Enter Input : ")),1) 
