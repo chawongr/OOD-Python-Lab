@@ -13,3 +13,4 @@ def staircase(n,i):
 
 staircase(int(input("Enter Input : ")),1) 
  
+ 
