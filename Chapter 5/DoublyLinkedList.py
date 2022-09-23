@@ -177,4 +177,4 @@ for i in inp:
         data = i[3:].split()
         L.insert(int(data[0]), data[1])
 print("Linked List :", L)
-print("Linked List Reverse :", L.reverse())
+print("Linked List Reverse :", L.reverse()) 
