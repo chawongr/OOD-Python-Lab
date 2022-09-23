@@ -24,4 +24,4 @@ for i in range(len(com)):
 if len(q.lst)==0:
     print('Empty')
 else:
-    print(*q.lst,sep=' ') 
+    print(*q.lst,sep=' ')  
