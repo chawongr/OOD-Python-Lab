@@ -22,5 +22,5 @@ class translator:
         return val
                 
 num = int(input('Enter number to translate : '))      
-print(*translator().deciToRoman(num),sep='')
+print(*translator().deciToRoman(num),sep='') 
 print(translator().romanToDeci(translator().deciToRoman(num)))      
