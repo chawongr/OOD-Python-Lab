@@ -60,5 +60,5 @@ if m==True:
         print(com,' open paren excess   ',len(sl.lst),' : ',*sl.lst,sep='')
     elif ')' in sl.lst:
         print(com,' close paren excess')
-    elif len(sl.lst)==0:
+    elif len(sl.lst)==0: 
         print(com,'MATCH')
