@@ -42,4 +42,4 @@ for i in com:
                 sl.pop()
             print(count)
             while not sll.isEmpty():
-                 sl.push(sll.pop())
+                 sl.push(sll.pop()) 
