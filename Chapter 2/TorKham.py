@@ -25,5 +25,4 @@ class TorKham:
 
 print("*** TorKham HanSaa ***")
 s = input("Enter Input : ").split(',')
-TorKham().play(s)
-
+TorKham().play(s) 
