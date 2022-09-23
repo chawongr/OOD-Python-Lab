@@ -38,5 +38,4 @@ for i in range(len(com)):
                         break
                 s.push(com[i])
 while len(s.lst)>0:
-    print(s.pop(),end='')
-
+    print(s.pop(),end='') 
