@@ -7,4 +7,3 @@ def isMax(lst):
     
 com = list(map(int,input('Enter Input : ').split(' ')))
 print('Max :',isMax(com))
- 
