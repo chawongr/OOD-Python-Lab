@@ -35,4 +35,4 @@ for i in range(int(time)):
         countB += 1
     if countB == 2:
         countB = 0
-        cashB.dequeue()
+        cashB.dequeue() 
