@@ -4,5 +4,5 @@ mul = num1 * num2
 sum = num1+num2
 if mul>1000:
     print('The result is',sum)
-else:
+else: 
         print('The result is',mul)
