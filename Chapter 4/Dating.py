@@ -75,4 +75,4 @@ if count>=7:
 elif count<7 and count>0:
     print("Umm.. It's complicated relationship! : Score is",count,end='.')
 else:
-    print("No! We're just friends. : Score is",count,end='.')
+    print("No! We're just friends. : Score is",count,end='.') 
