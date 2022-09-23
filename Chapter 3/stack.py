@@ -26,4 +26,4 @@ for i in range(len(com)):
 if len(s.lst)==0:
     print('Value in Stack = Empty')
 else:
-    print('Value in Stack =',*s.lst,sep=' ')
+    print('Value in Stack =',*s.lst,sep=' ') 
