@@ -76,4 +76,4 @@ elif len(s) == mx:
         elif str(n) not in s:
                 print('car',n,'cannot depart : Dont Have Car',n)
 
-print(a.lst)
+print(a.lst) 
