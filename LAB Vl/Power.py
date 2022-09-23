@@ -8,3 +8,4 @@ def power(a,b):
 
 a,b = input('Enter Input a b : ').split()
 print(power(int(a),int(b)))
+ 
