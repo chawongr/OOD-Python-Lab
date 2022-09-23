@@ -24,4 +24,4 @@ if len(a)==2:
 if len(a)==1:
     end=a[0]
 
-print(tuple(rangeTip(start,end,step)))
+print(tuple(rangeTip(start,end,step))) 
