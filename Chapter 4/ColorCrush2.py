@@ -125,4 +125,4 @@ else:
     while not ts.isEmpty():
         print(ts.pop(), end="")
     print()
-print("(RORRIM) ! ! ! (s)evisolpxE", bs) 
+print("(RORRIM) ! ! ! (s)evisolpxE", bs)  
