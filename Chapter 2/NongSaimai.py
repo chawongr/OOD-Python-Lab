@@ -5,4 +5,4 @@ def hbd(age):
         return 'saimai is just 21, in base '+str(age//2)+'!'
       
 age = int(input('Enter year : '))     
-print(hbd(age))
+print(hbd(age)) 
