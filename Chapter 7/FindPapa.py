@@ -45,10 +45,10 @@ def father(r,data):
         return f'None Because {data} is Root'
     while True:
         if not r.left and not r.right:
-            return "Not Found Data"
-        if data < r.data and data == r.left.data:
+            return f'Not Found Data'
+        if data < r.data and r.left.data == data:
             return r.data
-        elif data > r.data and data == r.right.data:
+        elif data > r.data and r.right.data == data:
             return r.data
         if data < r.data:
             r = r.left
