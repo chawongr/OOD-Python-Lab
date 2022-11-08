@@ -3,38 +3,38 @@ class Node:
         self.data = data
         self.right = None
         self.left = None
-        
+        self.height = 0
+
     def __str__(self):
         return str(self.data)
-    
+
 class BST:
     def __init__(self):
         self.root = None
     
-    def insert(self,data):
-        if self.root == None:
-            self.root = Node(data)
-            return self.root
+    def insert(self,node,data):
+        if not node:return Node(data)
         else:
-            r = self.root
-            while True:
-                if data < r.data:
-                    if r.left == None:
-                        r.left = Node(data)
-                        return self.root
-                    r = r.left
-                else:
-                    if r.right == None:
-                        r.right = Node(data)
-                        return self.root
-                    r = r.right
+            if data < node.data:
+                node.left = self.insert(node.left,data)
+            else:
+                node.right = self.insert(node.right,data)
+            return node
 
-    def height(self,node):
-        if node != None:
-            return max(self.height(node.left),self.height(node.right))+1
+    def findHeight(self,node):
+        if node:
+            return max(self.findHeight(node.left),self.findHeight(node.right))+1
         return -1
 
+def printTree(node,level=0):
+    if node:
+        printTree(node.right,level+1)
+        print('     '*level,node)
+        printTree(node.left,level+1)
+
 T = BST()
-inp = [int(i) for i in input("Enter Input : ").split()]
-for i in inp:T.insert(i)
-print("Height of this tree is :",T.height(T.root))                 
+root = None
+com = [int(i) for i in input('Enter Input : ').split()]
+for i in com:
+    root = T.insert(root,i)
+print(T.findHeight(root))
