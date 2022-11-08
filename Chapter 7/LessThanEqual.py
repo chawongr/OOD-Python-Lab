@@ -21,12 +21,12 @@ class BST:
                 node.right = self.insert(node.right,data)
             return node
     
-    def Inorder(self,node,k,q=[]):
+    def check(self,node,k,q=[]):
         if node:
-            self.Inorder(node.left,k)
+            self.check(node.left,k)
             if node.data<=k:
                 q.append(node.data)
-            self.Inorder(node.right,k)
+            self.check(node.right,k)
         return q
     
 def printTree(node,level=0):
@@ -42,5 +42,5 @@ left = com[0].split()
 for i in left:
     root = T.insert(root,int(i))
 printTree(root)
-a = T.Inorder(root,int(com[1]))
+a = T.check(root,int(com[1]))
 print(len(a))
