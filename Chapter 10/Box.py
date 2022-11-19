@@ -13,5 +13,4 @@ def minWeight(items,box,min):
 
 com = input('Enter Input : ').split('/')
 items , num = [int(i) for i in com[0].split()] , int(com[1])
-#numOfBox = int(com[1])
 print(f'Minimum weigth for {num} box(es) = {minWeight(items,num,max(items))}')
